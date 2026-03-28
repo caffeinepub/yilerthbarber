@@ -5,7 +5,9 @@ import {
   Calculator,
   ChevronDown,
   Clock,
+  CreditCard,
   Home,
+  Mail,
   MapPin,
   Menu,
   Phone,
@@ -974,7 +976,7 @@ function ContactSection() {
             ESCRIBIR A WHATSAPP
           </a>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mt-4">
             <div className="flex flex-col items-center gap-2 p-5 bg-carbon border border-border rounded-xl">
               <Phone className="w-6 h-6 text-gold" />
               <div className="font-bold text-sm text-foreground">Teléfono</div>
@@ -994,6 +996,28 @@ function ContactSection() {
               <div className="font-bold text-sm text-foreground">Horario</div>
               <div className="text-muted-foreground text-sm">
                 Lun – Sáb · 9AM – 7PM
+              </div>
+            </div>
+            <div className="flex flex-col items-center gap-2 p-5 bg-carbon border border-border rounded-xl">
+              <Mail className="w-6 h-6 text-gold" />
+              <div className="font-bold text-sm text-foreground">Correo</div>
+              <a
+                href="mailto:yelierhernandez3550@gmail.com"
+                className="text-muted-foreground text-sm hover:text-gold transition-colors break-all text-center"
+              >
+                yelierhernandez3550@gmail.com
+              </a>
+            </div>
+            <div className="flex flex-col items-center gap-2 p-5 bg-carbon border border-border rounded-xl">
+              <CreditCard className="w-6 h-6 text-gold" />
+              <div className="font-bold text-sm text-foreground">
+                Pago Móvil
+              </div>
+              <div className="text-muted-foreground text-sm text-center space-y-0.5">
+                <div>Banco de Venezuela</div>
+                <div>Código: 0102</div>
+                <div>C.I.: V-31114170</div>
+                <div>Tel: 0426 6137046</div>
               </div>
             </div>
           </div>
@@ -1076,6 +1100,19 @@ function Footer() {
               <li className="flex items-center gap-2 text-muted-foreground text-sm">
                 <Clock className="w-4 h-4 text-gold flex-shrink-0" />
                 Lun – Sáb · 9:00 AM – 7:00 PM
+              </li>
+              <li className="flex items-center gap-2 text-muted-foreground text-sm">
+                <Mail className="w-4 h-4 text-gold flex-shrink-0" />
+                <a
+                  href="mailto:yelierhernandez3550@gmail.com"
+                  className="hover:text-gold transition-colors break-all"
+                >
+                  yelierhernandez3550@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2 text-muted-foreground text-sm">
+                <CreditCard className="w-4 h-4 text-gold flex-shrink-0" />
+                Banco de Venezuela · 0102
               </li>
             </ul>
           </div>
