@@ -49,7 +49,7 @@ actor {
     };
   };
 
-  var bcvRate : Float = 36.5;
+  var bcvRate : Float = 473.92;
 
   let haircuts = Map.empty<Text, Haircut>();
 

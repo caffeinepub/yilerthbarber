@@ -694,7 +694,7 @@ function BCVCalculator() {
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px w-12 bg-gold" />
             <span className="text-gold text-xs font-bold tracking-[0.3em] uppercase">
-              Calculadora BCV
+              Tasa Banco de Venezuela
             </span>
             <div className="h-px w-12 bg-gold" />
           </div>
@@ -702,7 +702,7 @@ function BCVCalculator() {
             Precios en <span className="text-gold">Bolívares</span>
           </h2>
           <p className="text-muted-foreground mt-4">
-            Convierte los precios según la tasa oficial del BCV
+            Convierte los precios según la tasa oficial del Banco de Venezuela
           </p>
         </motion.div>
 
@@ -719,14 +719,14 @@ function BCVCalculator() {
               </div>
               <div>
                 <div className="font-bold text-foreground">
-                  Calculadora de Precios BCV
+                  Calculadora Banco de Venezuela
                 </div>
                 {isLoading ? (
                   <Skeleton className="h-4 w-40 mt-1 bg-carbon-card" />
                 ) : (
                   <div className="text-sm text-gold font-semibold">
-                    Tasa actual: 1 USD ={" "}
-                    {bcvRate > 0 ? formatVES(bcvRate) : "—"} Bs.
+                    Tasa BdV: 1 USD = {bcvRate > 0 ? formatVES(bcvRate) : "—"}{" "}
+                    Bs.
                   </div>
                 )}
               </div>
@@ -790,7 +790,7 @@ function BCVCalculator() {
             </div>
 
             <p className="text-xs text-muted-foreground mt-4 text-center">
-              ✦ Tasa BCV actualizada regularmente
+              ✦ Tasa del Banco de Venezuela (BdV) · Actualizada al 03/04/2026
             </p>
 
             <a
@@ -1061,7 +1061,7 @@ function Footer() {
                 ["Servicios", "#servicios"],
                 ["Galería", "#galeria"],
                 ["Testimonios", "#testimonios"],
-                ["Calculadora BCV", "#calculadora"],
+                ["Calculadora BdV", "#calculadora"],
                 ["Sobre Mí", "#sobre-mi"],
                 ["Contacto", "#contacto"],
               ].map(([label, href]) => (
