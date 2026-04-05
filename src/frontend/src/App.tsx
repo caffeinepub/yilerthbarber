@@ -307,7 +307,7 @@ function ServiceCard({
 // --- Services Section ---
 function ServicesSection() {
   const { data: haircuts, isLoading } = useHaircuts();
-  const { data: bcvRate = 0 } = useBCVRate();
+  const { data: bcvRate = 473.92 } = useBCVRate();
   const [activeFilter, setActiveFilter] = useState<string>("all");
 
   const categories = [
@@ -657,7 +657,7 @@ function TestimonialsSection() {
 
 // --- BCV Calculator ---
 function BCVCalculator() {
-  const { data: bcvRate = 0, isLoading } = useBCVRate();
+  const { data: bcvRate = 473.92, isLoading } = useBCVRate();
   const [usdInput, setUsdInput] = useState("");
   const [vesInput, setVesInput] = useState("");
 
@@ -790,7 +790,7 @@ function BCVCalculator() {
             </div>
 
             <p className="text-xs text-muted-foreground mt-4 text-center">
-              ✦ Tasa del Banco de Venezuela (BdV) · Actualizada al 03/04/2026
+              ✦ Tasa del Banco de Venezuela (BdV) · Actualizada al 04/04/2026
             </p>
 
             <a

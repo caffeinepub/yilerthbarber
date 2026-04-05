@@ -49,6 +49,7 @@ actor {
     };
   };
 
+  // Tasa BCV actual: 473.92 Bs/USD (04/04/2026)
   var bcvRate : Float = 473.92;
 
   let haircuts = Map.empty<Text, Haircut>();
@@ -83,7 +84,7 @@ actor {
         name = "Diseño/Líneas";
         description = "Diseños y líneas en cortes";
         priceUSD = 2.0;
-        category = #intermediate; // fixed mapping from #addOn
+        category = #intermediate;
       },
       {
         name = "Barba Básica";
@@ -153,6 +154,9 @@ actor {
   };
 
   initializeHaircuts();
+
+  // Forzar la tasa correcta al desplegar (04/04/2026: 473.92 Bs/USD)
+  bcvRate := 473.92;
 
   public query ({ caller }) func getBCVRate() : async Float {
     bcvRate;
